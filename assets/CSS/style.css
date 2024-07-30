@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Instalando fontes */
+@font-face {
+    font-family: "moderniz";
+    src: url(../fonts/Moderniz.otf);
+}
+@font-face {
+    font-family: "vito wide";
+    src: url(../fonts/Vito\ Wide\ Bold.ttf);
+}
+@font-face {
+    font-family: "vito extended";
+    src: url(../fonts/Vito-ExtendedRegular.woff.ttf);
+}
+
+/* HEADER */
+header{
+    width: 100%;
+}
+#container_header{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    img{
+     scale: 0.8;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        align-items: center;
+        padding: 10px;
+        gap: 50px;
+        font-family: "vito extended" ;
+        cursor: pointer;
+        
+        li{
+            font-size: 16px;
+            transition:  300ms;
+        }
+
+        li:hover{
+            scale: 1.1;
+        }
+    }
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position:absolute;
+    
+    background: #333;
+    width: 100%;
+    font-family: "vito extended" ;
+    color: white;
+    padding: 30px;
+    
+
+    ul{
+        li{
+            padding: 10px;
+            cursor: pointer;
+            transition:  300ms;
+        }
+        list-style-type: none;
+
+        li:hover{
+            
+            scale: 1.1;
+        }
+        
+    }
+}
+
+#contatos_footer{
+    div{
+        padding: 10px;
+        h1{
+            font-family: "vito wide";
+            font-size: 16px;
+        }
+        p{
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+    }
+}
+
+#endereco_footer{
+    p{
+        width: 339px;
+        font-family: Poppins;
+        
+    }
+}
+
+/* main */
+
+#banner_welcome{
+    background-image: url(../images/engenharia-1\ 1.svg);
+    height: 685px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1{
+        width: 1153px;
+        color: #FFF;
+        font-family: MODERNIZ;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 150%; /* 60px */
+        
+        
+    }
+    h2{
+        width: 1153px;
+        color: #FFF;
+        font-family: "Vito Extended";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 48px */
+    }
+    button{
+        
+    }
+
+}
