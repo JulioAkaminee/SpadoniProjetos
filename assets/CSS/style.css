@@ -31,18 +31,20 @@ header{
      scale: 0.8;
     }
 
+    nav{
+        display: flex;
+    }
     ul{
         display: flex;
         flex-direction: row;
         list-style-type: none;
         align-items: center;
-        padding: 10px;
         gap: 50px;
         font-family: "vito extended" ;
         
         
         li{
-            font-size: 16px;
+            font-size: clamp(12px,2vw,16px);
             transition:  300ms;
             cursor: pointer;
         }
@@ -171,4 +173,91 @@ footer{
 
 
 }
+
+/* sobre nos */
+#sobre_nos{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    
+    div{
+        width: 1153px;
+        h1{
+            font-family: "Vito wide";
+            text-align: start;
+
+        }
+        p{
+            font-family: "Vito extended";
+        }
+        
+    }
+}
+
+/* projetos destaque */
+#projetos_destaque{
+    display: flex;
+    justify-content: center;
+}
+
+#container_projetos_destaque{
+    width: 1153px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+    
+}
+#titulo_projetos_destaque{
+    margin-top: 30px;
+    font-family: "vito wide";
+}
+#projetos_destaque1, #projetos_destaque2{
+  
+   display: flex;
+   div{
+    img{
+        width: 350px;
+    }
+    margin: 10px;
+   }
+   h1{
+    font-family: "Vito extended";
+    font-weight: 400;
+    font-size: 16px;
+   }
+}
+
+#btn_todos_projetos{
+    font-family: "vito extended";
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: none;
+    font-weight: 400;
+    margin-top: 15px;
+    transition: 300ms;
+    border: 1.5px solid black;
+}
+
+#btn_todos_projetos:hover{
+    background: #333;
+    color: white;
+    cursor: pointer;
+    border: 1.5px solid white;
+}
+
+.projeto_destaque_projetos{
+    transition: 300ms;
+}
+.projeto_destaque_projetos:hover{
+    scale: 1.050;
+    cursor: pointer;
+    
+}
+
+/* slider */
+
+
 
