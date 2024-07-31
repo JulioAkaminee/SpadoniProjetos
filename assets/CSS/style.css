@@ -213,7 +213,7 @@ footer{
     margin-top: 30px;
     font-family: "vito wide";
 }
-#projetos_destaque1, #projetos_destaque2{
+.projetos_destaque_containers{
   
    display: flex;
    div{
@@ -239,6 +239,7 @@ footer{
     margin-top: 15px;
     transition: 300ms;
     border: 1.5px solid black;
+    margin: 10px;
 }
 
 #btn_todos_projetos:hover{
@@ -250,6 +251,7 @@ footer{
 
 .projeto_destaque_projetos{
     transition: 300ms;
+    
 }
 .projeto_destaque_projetos:hover{
     scale: 1.050;
@@ -257,7 +259,33 @@ footer{
     
 }
 
-/* slider */
+/* alguns clientes */
+
+#alguns_clientes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 186px;
+    background: #333333;
+
+}
+.slider{
+    width: 1153px;
+   h1{
+    margin-bottom: 10px;
+    font-family: "vito wide";
+    color: white;
+   }
+}
+
+.slide-track{
+    display: flex;
+    flex-direction: row;
+    
+}
+.slide{
+    margin: 5px;
+}
 
 
 
