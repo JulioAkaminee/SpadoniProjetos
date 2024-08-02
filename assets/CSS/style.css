@@ -287,5 +287,145 @@ footer{
     margin: 5px;
 }
 
+/* servicos */
+.servicos{
+    margin: 0 auto;
+    width: 1153px;
+    div{
 
+        display: flex;
+        justify-content: center;
+    }
+    h1{
+        margin-top: 5px;
+        font-family: "vito wide";
+        color: #333;
+    }
+}
+.box_servico{
+    width: 360px;
+    margin: 17px;
+  
+    
+    img{
+        width: 360px;
+        height: 220px;
+        object-fit: cover;
+        
+    }
+    
+    font-family: "vito extended";
+    
 
+    h2{
+        margin: 5px 0;
+        font-size: 22px;
+       
+    }
+    p{
+        font-weight: 200;
+    }
+    ul{
+        margin: 15px;
+    }
+
+   
+}
+
+/* Missão, visão e valores */
+
+.mvv{
+    
+    background: #333;
+
+    padding: 10px 0;
+
+  
+    
+    
+
+    div{
+        color: white;
+        display: flex;
+        justify-content: center;
+        
+    }
+    h1{
+        
+        color: white;
+        width: 1153px;
+        margin: 0 auto;
+        z-index: 9999;
+        margin-top: 30px;
+        font-family: "vito wide";
+        color: white;
+    }
+    h2{
+        font-family: "vito wide";
+        font-weight: 700;
+    }
+}
+
+/* contato */
+
+.contato{
+    display: flex;
+    justify-content: center;
+    background: #BB8931;
+    padding: 30px;
+    
+    label{
+        color: white;
+        font-family: "Vito Extended";
+    }
+    
+    h1{
+        color: white;
+        font-family: "Vito Wide";
+    }
+
+    span{
+        color: red;
+    }
+}
+.contato_form{
+    width: 1153px;
+    
+}
+.input_email_and_name{
+    display: flex;
+    flex-direction: row;
+    
+    div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.input_message{
+    display: flex;
+    flex-direction: column;
+}
+.input_contato{
+    border: none;
+    outline: none;
+    height: 39px;
+    margin: 2px;
+    padding: 5px;
+}
+
+.btn_enviar_contato{
+    cursor: pointer;
+    margin-top: 5px;
+    width: 340.831px;
+    height: 40px;
+    background: #333;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: "Vito Wide";
+    font-size: 18px;
+    padding: 5px;
+
+}
