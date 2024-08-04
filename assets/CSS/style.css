@@ -429,3 +429,48 @@ footer{
     padding: 5px;
 
 }
+
+/* PROJETOS */
+
+.container_projetos_geral{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+.container_projetos{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    
+
+    img{
+        width: 350px;
+    }
+
+}
+
+.projetos{
+    margin: 10px;
+    flex-direction: row;
+
+    h1{
+        font-family: "vito extended";
+        font-weight: 400;
+        line-height: 150%; /* 36px */
+        font-size: clamp(16px,2vw,18px);
+    }
+}
+
+.text_projetos{
+    font-family: "vito wide";
+    display: flex;
+    justify-content: center;
+    
+    h1{
+        margin-top:20px;
+        width: 80%;
+        font-size: 24px;
+    }
+}
