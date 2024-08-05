@@ -204,26 +204,31 @@
   </section>
 
   <section class="contato">
-    <form action="" class="contato_form">
+    <form action="https://formsubmit.co/juliooakamine@gmail.com" class="contato_form" method="POST">
         
             <h1>CONTATO</h1>
             <div class="input_email_and_name">
                 <div>
                     <label for="">Nome<span>*</span></label>
-                    <input class="input_contato" type="text" name="" id="">
+                    <input class="input_contato" type="text" name="name" placeholder="Digite Seu Nome" id="" required>
                 </div>
                 <div>
                     <label for="">E-mail<span>*</span></label>
-                    <input class="input_contato" type="email" name="" id="">
+                    <input class="input_contato" type="email" name="email" placeholder="Digite Seu E-mail" id="" required>
                 </div>
             </div>
         
             <div class="input_message">
                 <label for="">Mensagem<span>*</span></label>
-                <input class="input_contato" type="text">
+                <textarea name="message" class="input_contato" id=""  required></textarea>
             </div>
             <div >
-                <button class="btn_enviar_contato">ENVIAR</button>
+                <button type="submit" class="btn_enviar_contato">ENVIAR</button>
+
+                <input type="hidden" name="_subject" value="NOVA MENSAGEM">
+                <input type="text" name="_honey" style="display: none;">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" nome="_next" value="index.html">
             </div>
         
     </form>

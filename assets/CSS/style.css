@@ -32,8 +32,8 @@ html {
     position: fixed;
     bottom: 0;
     right: 0;
-    width: 66.828px;
-    height: 66.828px;
+    width: 50px;
+    height: 50px;
     flex-shrink: 0;
 
     border-radius: 66.828px;
@@ -463,6 +463,8 @@ footer{
     height: 39px;
     margin: 2px;
     padding: 5px;
+    max-width: 100%;
+    min-width: 100%;
 }
 
 .btn_enviar_contato{
@@ -553,7 +555,7 @@ footer{
     border: 1px solid #888;
     width: 80%; /* Largura do modal */
     max-width: 900px; /* Largura máxima */
-    height: 40%;
+    height: initial;
     display: flex;
     flex-direction: column;
 }
