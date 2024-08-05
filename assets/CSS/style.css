@@ -535,9 +535,14 @@ footer{
 
 /* modal */
 /* Modal Container */
+#myModal{
+    justify-content: center;
+    align-items: center;
+}
 .modal {
     display: none; /* Escondido por padrão */
     position: fixed; /* Fixo na tela */
+   
     z-index: 1; /* Fica acima do conteúdo */
     left: 0;
     top: 0;
@@ -550,7 +555,7 @@ footer{
 /* Modal Content */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* Centraliza o modal na tela */
+  
     padding: 15px;
     border: 1px solid #888;
     width: 80%; /* Largura do modal */

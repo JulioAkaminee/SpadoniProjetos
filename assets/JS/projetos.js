@@ -9,8 +9,8 @@ var span = document.getElementsByClassName("close")[0];
 
 // Quando o usuário clica no botão, abre o modal
 btn.onclick = function() {
-    modal.style.display = "block";
-   
+    modal.style.display = "flex";
+
 }
 
 // Quando o usuário clica no <span> (x), fecha o modal
@@ -52,7 +52,7 @@ sunlight.onclick = function() {
     DISPOSIÇÃO DAS PLANTAS ENTRE 88m² E 119m².
     ANO: 2023 `; // Usa <br> para quebras de linha no HTML
 
-    modal.style.display = "block"; // Exibe o modal
+    modal.style.display = "flex"; // Exibe o modal
 }
 
 
@@ -72,7 +72,7 @@ view_residence.onclick = function() {
         ANO: 2023
     `; // Usa <br> para quebras de linha no HTML
 
-    modal.style.display = "block"; // Exibe o modal
+    modal.style.display = "flex"; // Exibe o modal
 }
 
 maisondor.onclick = function() {
@@ -92,7 +92,7 @@ maisondor.onclick = function() {
     
     `; // Usa <br> para quebras de linha no HTML
 
-    modal.style.display = "block"; // Exibe o modal
+    modal.style.display = "flex"; // Exibe o modal
 }
 
 
@@ -113,7 +113,7 @@ serra_de_botucatu.onclick = function() {
     
     `; // Usa <br> para quebras de linha no HTML
 
-    modal.style.display = "block"; // Exibe o modal
+    modal.style.display = "flex"; // Exibe o modal
 }
 
 icon_golf_residence.onclick = function() {
@@ -134,7 +134,7 @@ icon_golf_residence.onclick = function() {
     
     `; // Usa <br> para quebras de linha no HTML
 
-    modal.style.display = "block"; // Exibe o modal
+    modal.style.display = "flex"; // Exibe o modal
 }
 
 arbore.onclick = function() {
@@ -152,6 +152,6 @@ arbore.onclick = function() {
     
     `; // Usa <br> para quebras de linha no HTML
 
-    modal.style.display = "block"; // Exibe o modal
+    modal.style.display = "flex"; // Exibe o modal
 }
 
