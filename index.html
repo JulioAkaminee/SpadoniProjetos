@@ -19,17 +19,34 @@
 </head>
 
 <body>
+    <div id="container_voltar_ao_inicio">
+        <a href="#container_header">
+            <span class="material-symbols-outlined">
+                arrow_upward
+                </span>
+        </a>
+    </div>
     <header>
         <div id="container_header">
-            <img src="assets/images/icons/LOGO_COMPLETO.svg" alt="Logo_spadoni_projetos">
+            <a href="index.html"><img src="assets/images/icons/LOGO_COMPLETO.svg" alt="Logo_spadoni_projetos"></a>
 
             <nav>
                 <ul>
-                    <li>HOME</li>
-                    <li>PROJETOS</li>
-                    <li>SERVIÇOS</li>
-                    <li>SOBRE</li>
-                    <li>CONTATO</li>
+                    <a href="#container_header">
+                        <li>HOME</li>
+                    </a>
+                    <a href="#projetos_destaque">
+                        <li>PROJETOS</li>
+                    </a>
+                    <a href="#servicos">
+                        <li>SERVIÇOS</li>
+                    </a>
+                    <a href="#seta_contato">
+                        <li>SOBRE</li>
+                    </a>
+                    <a href="#contatos_footer">
+                        <li>CONTATO</li>
+                    </a>
                 </ul>
             </nav>
         </div>
@@ -43,9 +60,11 @@
                 <h1>PROJETO DE ALVENARIA RACIONALIZADA E COMPATIBILIZADA, RESULTANDO EM UMA MAIOR EFICIENCIA NA OBRA.
                     TRANSFORMANDO IDEIAS EM REALIDADE.</h1>
                 <h2>Descubra a excelência da Spadoni Projetos. Projetos precisos e eficientes em 2D e BIM. Transforme suas ideias em realidade hoje mesmo!</h2>
-                <button>Entre em contato <span id="seta_contato" class="material-symbols-outlined">
-                    arrow_forward
-                    </span> </button>
+                <a href="#contatos_footer">
+                    <button>Entre em contato <span id="seta_contato" class="material-symbols-outlined">
+                        arrow_forward
+                        </span> </button>
+                </a>
             </div>
         </div>
       </section>
@@ -63,46 +82,48 @@
           <div id="container_projetos_destaque">
             <h1 id="titulo_projetos_destaque">PROJETOS EM DESTAQUE</h1>
             <div class="projetos_destaque_containers">
-                <div class="projeto_destaque_projetos">
+                <div id="sunlight" class="projeto_destaque_projetos">
                     <img src="assets/images/projetos/SUNLIGHT.svg" alt="">
                     <h1>SUNLIGHT</h1>
                 </div>
-                <div class="projeto_destaque_projetos">
+                <div id="view_residence" class="projeto_destaque_projetos">
                     <img src="assets/images/projetos/VIEW RESIDENCE .svg" alt="">
                     <h1>VIEW RESIDENCE</h1>
                 </div>
-                <div class="projeto_destaque_projetos">
+                <div id="maisondor" class="projeto_destaque_projetos">
                     <img src="assets/images/projetos/MAISON'DOR.svg" alt="">
                     <h1>MAISON D'OR</h1>
                 </div>
             </div>
 
             <div class="projetos_destaque_containers">
-                <div class="projeto_destaque_projetos">
+                <div id="serra_de_botucatu" class="projeto_destaque_projetos">
                     <img src="assets/images/projetos/SERRA DE BOTUCATU .svg" alt="">
                     <h1>SERRA DE BOTUCATU</h1>
                     
                 </div>
-                <div class="projeto_destaque_projetos">
+                <div id="icon_golf_residence" class="projeto_destaque_projetos">
                     <img src="assets/images/projetos/ICON GOLF RESIDENCE .svg" alt="">
                     <h1>ICON GOLF RESIDENCE</h1>
                 </div>
-                <div class="projeto_destaque_projetos">
+                <div id="arbore" class="projeto_destaque_projetos">
                     <img src="assets/images/projetos/ARBORÊ.svg" alt="">
                     <h1>ARBORÊ</h1>
                 </div>
             </div>
             <div>
-                <button id="btn_todos_projetos">TODOS OS PROJETOS <span id="seta_contato" class="material-symbols-outlined">
-                    arrow_forward
-                    </span> </button>
+                <a href="assets/pages/projetos.html">
+                    <button id="btn_todos_projetos">TODOS OS PROJETOS <span id="seta_contato" class="material-symbols-outlined">
+                        arrow_forward
+                        </span> </button>
+                </a>
             </div>
         </div>
       </section>
 
       <article id="alguns_clientes">
     
-          <div class="slider">
+          <div class="slider" id="servicos">
                 <h1>ALGUNS CLIENTES</h1>
                 <div class="slide-track">
                     <div class="slide"> <img src="assets/images/clientes/MOURA DUBEUX.svg" alt=""></div>
@@ -114,7 +135,7 @@
             </div>
         </div>
       </article>
-      <section class="servicos">
+      <section class="servicos" >
           <h1>SERVIÇOS</h1>
           <div>
               <article class="box_servico">
@@ -183,27 +204,29 @@
   </section>
 
   <section class="contato">
-    <div class="contato_form">
-        <h1>CONTATO</h1>
-        <div class="input_email_and_name">
-            <div>
-                <label for="">Nome<span>*</span></label>
-                <input class="input_contato" type="text" name="" id="">
-            </div>
-            <div>
-                <label for="">E-mail<span>*</span></label>
-                <input class="input_contato" type="email" name="" id="">
-            </div>
-        </div>
+    <form action="" class="contato_form">
         
-        <div class="input_message">
-            <label for="">Mensagem<span>*</span></label>
-            <input class="input_contato" type="text">
-        </div>
-        <div >
-            <button class="btn_enviar_contato">ENVIAR</button>
-        </div>
-    </div>
+            <h1>CONTATO</h1>
+            <div class="input_email_and_name">
+                <div>
+                    <label for="">Nome<span>*</span></label>
+                    <input class="input_contato" type="text" name="" id="">
+                </div>
+                <div>
+                    <label for="">E-mail<span>*</span></label>
+                    <input class="input_contato" type="email" name="" id="">
+                </div>
+            </div>
+        
+            <div class="input_message">
+                <label for="">Mensagem<span>*</span></label>
+                <input class="input_contato" type="text">
+            </div>
+            <div >
+                <button class="btn_enviar_contato">ENVIAR</button>
+            </div>
+        
+    </form>
   </section>
     
 
@@ -211,11 +234,21 @@
     </main>
     <footer>
         <ul>
-            <li>HOME</li>
-            <li>PROJETOS</li>
-            <li>SERVIÇOS</li>
-            <li>SOBRE</li>
-            <li>CONTATO</li>
+            <a href="#container_header">
+                <li>HOME</li>
+            </a>
+            <a href="#projetos_destaque">
+                <li>PROJETOS</li>
+            </a>
+            <a href="#servicos">
+                <li>SERVIÇOS</li>
+            </a>
+            <a href="#seta_contato">
+                <li>SOBRE</li>
+            </a>
+            <a href="#contatos_footer">
+                <li>CONTATO</li>
+            </a>
         </ul>
 
         <div id="contatos_footer">
@@ -239,5 +272,30 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.659866472805!2d-46.74102382376544!3d-23.36433425438517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cee48556a8c5cb%3A0xaac88ba6937cc15f!2sR.%20S%C3%A3o%20Lu%C3%ADs%2C%20116%20-%205%C2%BA%20Andar%20-%20Cresci%C3%BAma%2C%20Caieiras%20-%20SP%2C%2007700-000!5e0!3m2!1spt-BR!2sbr!4v1722347403080!5m2!1spt-BR!2sbr" width="339" height="140" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </footer>
+
+    
+    <!-- modal -->
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            
+            <div class="text_modal">
+                <img id="image_modal" src="../images/projetos/SUNLIGHT.svg" alt="">
+                <div>
+                    <h1 id="text_title_modal">SUNLIGHT</h1>
+                    <p id="description_modal">CONSTRUTORA: MM CORTÊS 
+                        PROJETO: SUNLIGHT
+                        LOCALIZAÇÃO: CARAGUATATUBA – SP.
+                        DISPOSIÇÃO DAS PLANTAS ENTRE 88m² E 119m².
+                        ANO: 2023
+                        
+                         </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/JS/projetos.js"></script>
 </body>
 </html>

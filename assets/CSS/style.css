@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 /* Instalando fontes */
 @font-face {
@@ -16,10 +17,43 @@
     font-family: "vito extended";
     src: url(../fonts/Vito-ExtendedRegular.woff.ttf);
 }
+html {
+    scroll-behavior: smooth;
+}
+/* botao voltar ao inicio */
+
+#container_voltar_ao_inicio{
+    z-index: 99999;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 66.828px;
+    height: 66.828px;
+    flex-shrink: 0;
+
+    border-radius: 66.828px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12.5px);
+    -webkit-box-shadow: 0px 0px 64px 4px rgba(0, 0, 0, 0.49);
+-moz-box-shadow: 0px 0px 64px 4px rgba(0, 0, 0, 0.49);
+box-shadow: 0px 0px 64px 4px rgba(0, 0, 0, 0.49);
+
+span{
+    color: black;
+    font-weight: 700;
+    
+}
+}
 
 /* HEADER */
 header{
     width: 100%;
+    
 }
 #container_header{
     
@@ -33,8 +67,16 @@ header{
 
     nav{
         display: flex;
+        
     }
     ul{
+       
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+       
         display: flex;
         flex-direction: row;
         list-style-type: none;
@@ -44,6 +86,7 @@ header{
         
         
         li{
+            
             font-size: clamp(12px,2vw,16px);
             transition:  300ms;
             cursor: pointer;
@@ -71,6 +114,9 @@ footer{
     
 
     ul{
+        a{
+            color: white;
+        }
         li{
             padding: 10px;
             cursor: pointer;
@@ -116,6 +162,9 @@ footer{
 
 #banner_welcome{
     background-image: url(../images/engenharia-1\ 1.svg);
+    background-size: cover; /* Faz a imagem cobrir todo o banner */
+    background-position: center; /* Centraliza a imagem no banner */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
     height: 685px;
 
  
@@ -131,6 +180,7 @@ footer{
         
     }
     h2{
+        
         width: 1153px;
         color: #FFF;
         font-family: "Vito Extended";
@@ -372,7 +422,7 @@ footer{
     display: flex;
     justify-content: center;
     background: #BB8931;
-    padding: 30px;
+    padding: 50px;
     
     label{
         color: white;
@@ -454,6 +504,7 @@ footer{
 .projetos{
     margin: 10px;
     flex-direction: row;
+    transition: 300ms;
 
     h1{
         font-family: "vito extended";
@@ -461,6 +512,11 @@ footer{
         line-height: 150%; /* 36px */
         font-size: clamp(16px,2vw,18px);
     }
+}
+.projetos:hover{
+    scale: 1.050;
+    cursor: pointer;
+    
 }
 
 .text_projetos{
@@ -470,7 +526,91 @@ footer{
     
     h1{
         margin-top:20px;
-        width: 80%;
+      
         font-size: 24px;
     }
+}
+
+/* modal */
+/* Modal Container */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fixo na tela */
+    z-index: 1; /* Fica acima do conteúdo */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total da tela */
+    height: 100%; /* Altura total da tela */
+    overflow: auto; /* Adiciona rolagem se necessário */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escurecido */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centraliza o modal na tela */
+    padding: 15px;
+    border: 1px solid #888;
+    width: 80%; /* Largura do modal */
+    max-width: 900px; /* Largura máxima */
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fechar (X) */
+.close {
+    margin: 0px 10px;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.text_modal{
+    display: flex;
+    
+    flex-direction: row;
+
+    img{
+        padding: 0 15px;
+        width: 460px;
+        height: 296px;
+    }
+
+    div{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        h1{
+            color: #333;
+            font-family: "Vito Wide";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%; /* 54px */
+        }
+        p{
+            width: 80%;
+           
+            color: #000;
+           
+
+            font-family: "Vito Extended";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px
+        }
+       
+    }
+    
 }
