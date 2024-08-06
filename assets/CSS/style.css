@@ -173,7 +173,7 @@ footer{
     background-size: cover; /* Faz a imagem cobrir todo o banner */
     background-position: center; /* Centraliza a imagem no banner */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
-    height: 685px;
+    height: 500px;
 
  
     h1{
@@ -206,7 +206,7 @@ footer{
         color: white;
         border: none;
         padding: 10px;
-
+        font-size: clamp(16px, 2vw, 20px);
         transition: 300ms;
         cursor: pointer;
     }
@@ -691,6 +691,7 @@ footer{
     
     h1{
         font-weight: 100;
+        font-size: clamp(20px,2vw,40px);
         
     }
 
@@ -698,6 +699,7 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
 
         margin-top: 15px;
         width: 181px;
@@ -710,6 +712,12 @@ footer{
         font-style: normal;
         font-weight: 400;
         line-height: 150%; /* 36px */
+        transition: 300ms;
+            }
+
+            button:hover{
+                background-color: white;
+                color: black;
             }
 
   
