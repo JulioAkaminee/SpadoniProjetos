@@ -30,6 +30,10 @@
         <div id="container_header">
             <a href="index.html"><img src="assets/images/icons/LOGO_COMPLETO.svg" alt="Logo_spadoni_projetos"></a>
 
+            <span id="menu_burguer" class="material-symbols-outlined">
+                menu
+                </span>
+
             <nav>
                 <ul>
                     <a href="#container_header">
@@ -121,6 +125,13 @@
         </div>
       </section>
 
+      <section class="projetos_destaque_mobile">
+        <h1>PROJETOS</h1>
+        <button>Saiba Mais <span id="seta_contato" class="material-symbols-outlined">
+            arrow_forward
+            </span>  </button>
+      </section>
+
       <article id="alguns_clientes">
     
           <div class="slider" id="servicos">
@@ -136,7 +147,9 @@
         </div>
       </article>
       <section class="servicos" >
-          <h1>SERVIÇOS</h1>
+          <div>
+              <h1>SERVIÇOS</h1>
+          </div>
           <div>
               <article class="box_servico">
                 <img src="assets/images/vedacoes.svg" alt="Ícone de vedação">
@@ -223,7 +236,7 @@
         
             <div class="input_message">
                 <label for="">Mensagem<span>*</span></label>
-                <textarea name="message" class="input_contato" id=""  required></textarea>
+                <textarea name="message" placeholder="Digite Sua Mensagem" class="input_contato" id=""  required></textarea>
             </div>
             <div >
                 <button type="submit" class="btn_enviar_contato">ENVIAR</button>

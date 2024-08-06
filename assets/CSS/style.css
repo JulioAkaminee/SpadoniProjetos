@@ -55,6 +55,13 @@ header{
     width: 100%;
     
 }
+
+#menu_burguer{
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
 #container_header{
     
     display: flex;
@@ -104,6 +111,7 @@ footer{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     position:absolute;
     
     background: #333;
@@ -169,10 +177,10 @@ footer{
 
  
     h1{
-        width: 1153px;
+       
         color: #FFF;
         font-family: "MODERNIZ";
-        font-size: 40px;
+        font-size: clamp(16px, 2vw, 40px);
         font-style: normal;
         font-weight: 900;
         line-height: 150%; /* 60px */
@@ -181,10 +189,10 @@ footer{
     }
     h2{
         
-        width: 1153px;
+        
         color: #FFF;
         font-family: "Vito Extended";
-        font-size: 32px;
+        font-size: (16px, 2vw, 32px);
         font-style: normal;
         font-weight: 400;
         line-height: 150%; /* 48px */
@@ -198,7 +206,7 @@ footer{
         color: white;
         border: none;
         padding: 10px;
-        font-size: 23px;
+
         transition: 300ms;
         cursor: pointer;
     }
@@ -212,6 +220,10 @@ footer{
     }
 
     #container_conteudo_banner_welcome{
+
+        div{
+            width: 80%;
+        }
         
         display: flex;
         flex-direction: column;
@@ -231,7 +243,7 @@ footer{
     justify-content: center;
     
     div{
-        width: 1153px;
+        width: 80%;
         h1{
             font-family: "Vito wide";
             text-align: start;
@@ -248,13 +260,17 @@ footer{
 #projetos_destaque{
     display: flex;
     justify-content: center;
+ 
 }
 
 #container_projetos_destaque{
-    width: 1153px;
+    
     display: flex;
+    width: 80%;
+  
     flex-direction: column;
     justify-content: center;
+    
 
     
     
@@ -264,11 +280,18 @@ footer{
     font-family: "vito wide";
 }
 .projetos_destaque_containers{
-  
+ 
    display: flex;
+   
    div{
+   
+    display: flex;
+    flex-direction: column;
+   
     img{
-        width: 350px;
+        width: 100%;
+        object-fit: cover;
+        height: 310px;
     }
     margin: 10px;
    }
@@ -301,6 +324,7 @@ footer{
 
 .projeto_destaque_projetos{
     transition: 300ms;
+    width: 80%;
     
 }
 .projeto_destaque_projetos:hover{
@@ -315,12 +339,13 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 186px;
+    padding: 20px;
+    width: 100%;
     background: #333333;
 
 }
 .slider{
-    width: 1153px;
+    width: 80%;
    h1{
     margin-bottom: 10px;
     font-family: "vito wide";
@@ -331,20 +356,28 @@ footer{
 .slide-track{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     
 }
 .slide{
     margin: 5px;
+
+   
 }
 
 /* servicos */
 .servicos{
-    margin: 0 auto;
-    width: 1153px;
-    div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   div{
+        width: 80%;
+        gap: 5%;
 
         display: flex;
-        justify-content: center;
+        
+       
     }
     h1{
         margin-top: 5px;
@@ -353,12 +386,13 @@ footer{
     }
 }
 .box_servico{
-    width: 360px;
-    margin: 17px;
+    width: 100%;
+    margin: 10px;
+    
   
     
     img{
-        width: 360px;
+        width: 100%;
         height: 220px;
         object-fit: cover;
         
@@ -389,7 +423,11 @@ footer{
     background: #333;
 
     padding: 10px 0;
-
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   
     
     
@@ -397,13 +435,14 @@ footer{
     div{
         color: white;
         display: flex;
-        justify-content: center;
+        
+        
+        width: 80%;
         
     }
     h1{
-        
+        width: 80%;
         color: white;
-        width: 1153px;
         margin: 0 auto;
         z-index: 9999;
         margin-top: 30px;
@@ -439,12 +478,13 @@ footer{
     }
 }
 .contato_form{
-    width: 1153px;
+        width: 80%;
     
 }
 .input_email_and_name{
     display: flex;
     flex-direction: row;
+    
     
     div{
         width: 100%;
@@ -462,9 +502,9 @@ footer{
     outline: none;
     height: 39px;
     margin: 2px;
-    padding: 5px;
+    padding: 11px;
     max-width: 100%;
-    min-width: 100%;
+    
 }
 
 .btn_enviar_contato{
@@ -495,6 +535,7 @@ footer{
     display: flex;
     flex-direction: row;
     margin: 10px 0;
+    width: 80%;
     
 
     img{
@@ -507,6 +548,7 @@ footer{
     margin: 10px;
     flex-direction: row;
     transition: 300ms;
+    width: 100%;
 
     h1{
         font-family: "vito extended";
@@ -525,6 +567,10 @@ footer{
     font-family: "vito wide";
     display: flex;
     justify-content: center;
+    
+    div{
+        width: 80%;
+    }
     
     h1{
         margin-top:20px;
@@ -590,6 +636,7 @@ footer{
         padding: 0 15px;
         width: 460px;
         height: 296px;
+        object-fit: cover;
     }
 
     div{
@@ -621,3 +668,117 @@ footer{
     }
     
 }
+
+/* projetos destaques mobile */
+
+.projetos_destaque_mobile{
+    margin: 15px 0;
+    background-image: url(../images/projetos_mobile.svg);
+    background-size: cover; /* Faz a imagem cobrir todo o banner */
+    background-position: center; /* Centraliza a imagem no banner */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    height: 474px;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Vito Extended";
+    color: white;
+
+
+    
+    h1{
+        font-weight: 100;
+        
+    }
+
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 15px;
+        width: 181px;
+        height: 57px;
+        color: white;
+        border: 1px solid white;
+        background: none;
+        font-family: "Vito Extended";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 36px */
+            }
+
+  
+}
+
+
+
+/* responsividade */
+
+@media screen and (max-width: 775px) {
+    .servicos div {
+        flex-wrap: wrap;
+    }
+
+    .mvv div {
+        flex-wrap: wrap;
+    }
+
+    #container_header ul {
+        display: none;
+    }
+
+
+
+    .btn_enviar_contato {
+        width: 100%;
+    }
+    
+    #menu_burguer {
+        display: flex;
+    }
+    
+    .projetos_destaque_containers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .modal_content {
+        width: 36%;
+    }
+    
+    .text_modal {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .text_modal img {
+        width: 100%;
+    }
+    
+    #projetos_destaque {
+        display: none;
+    }
+
+    .input_email_and_name {
+        display: flex;
+        flex-direction:column;
+    }
+
+    .projetos_destaque_mobile{
+        display: flex;
+    }
+
+}
+
+
+
+
+
+
+
