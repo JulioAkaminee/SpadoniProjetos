@@ -24,7 +24,8 @@ html {
 
 #container_voltar_ao_inicio{
     z-index: 99999;
-    margin-right: 100px;
+    margin-right: 5%;
+    
     margin-bottom: 30px;
     display:flex;
     justify-content: center;
@@ -51,7 +52,7 @@ span{
 }
 
 /* HEADER */
-header{
+/* header{
     width: 100%;
     
 }
@@ -103,13 +104,78 @@ header{
             scale: 1.1;
         }
     }
+} */
+
+header {
+    width: 100%;
 }
+
+#container_header {
+    display: flex;
+    justify-content: space-between; /* Alinha logo à esquerda e menu hamburguer à direita */
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    padding: 0 20px; /* Adiciona algum espaçamento horizontal */
+
+    img{
+        scale: 0.8;
+       }
+}
+
+#logo img {
+    scale: 0.8;
+}
+
+#menu_container {
+    display: flex;
+    align-items: center;
+}
+
+#menu_burguer {
+    display: none;
+    font-size: 35px; /* Ajuste o tamanho conforme necessário */
+    cursor: pointer;
+}
+
+nav {
+    display: block; /* Oculta o menu para desktop como mencionado */
+
+     ul{
+       
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+       
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        align-items: center;
+        gap: 50px;
+        font-family: "vito extended" ;
+        
+        
+        li{
+            
+            font-size: clamp(12px,2vw,16px);
+            transition:  300ms;
+            cursor: pointer;
+        }
+
+        li:hover{
+            scale: 1.1;
+        }
+}}
+
+
+
 
 /* FOOTER */
 
 footer{
     display: flex;
     justify-content: space-evenly;
+    
     align-items: center;
     flex-wrap: wrap;
     position:absolute;
@@ -166,6 +232,68 @@ footer{
     }
 }
 
+/* menu navegação mobile */
+
+.overlay {
+    display: none; /* Oculta o overlay por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Cor do fundo do overlay */
+    z-index: 999; /* Garante que o overlay fique acima de outros conteúdos */
+   
+}
+
+/* Adiciona desfoque ao fundo quando o menu está aberto */
+.blur {
+    filter: blur(1px);
+    transition: filter 500ms;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o menu */
+   text-align: center;
+   transition: 500ms;
+    padding: 20px;
+    opacity: 0;
+    
+    z-index: 1000; /* Garante que o menu fique acima do overlay */
+    width: 80%; /* Ajuste a largura do menu conforme necessário */
+    max-width: 400px; /* Define a largura máxima do menu */
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    font-size: 32px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 300ms;
+    font-family: "vito extended";
+    transition: opacity 0.5s ease-in-out; /
+}
+
+.menu li:hover {
+    background-color: #f0f0f0; /* Efeito ao passar o mouse */
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    display: block; /* Faz com que o link ocupe toda a área do item da lista */
+}
+
 /* main */
 
 #banner_welcome{
@@ -192,7 +320,7 @@ footer{
         
         color: #FFF;
         font-family: "Vito Extended";
-        font-size: (16px, 2vw, 32px);
+        font-size: clamp(16px, 2vw, 32px);
         font-style: normal;
         font-weight: 400;
         line-height: 150%; /* 48px */
@@ -238,7 +366,7 @@ footer{
 
 /* sobre nos */
 #sobre_nos{
-    margin-top: 30px;
+    margin: 30px 0;
     display: flex;
     justify-content: center;
     
@@ -380,14 +508,14 @@ footer{
        
     }
     h1{
-        margin-top: 5px;
+        margin: 10px;
         font-family: "vito wide";
         color: #333;
     }
 }
 .box_servico{
     width: 100%;
-    margin: 10px;
+   
     
   
     
@@ -422,12 +550,13 @@ footer{
     
     background: #333;
 
-    padding: 10px 0;
+    
     display: flex;
     
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 10px 0;
   
     
     
@@ -435,17 +564,18 @@ footer{
     div{
         color: white;
         display: flex;
-        
-        
         width: 80%;
+        gap: 5%;
+        
+       
         
     }
     h1{
-        width: 80%;
+        
         color: white;
         margin: 0 auto;
         z-index: 9999;
-        margin-top: 30px;
+        margin: 30px 5%;
         font-family: "vito wide";
         color: white;
     }
@@ -504,10 +634,11 @@ footer{
     margin: 2px;
     padding: 11px;
     max-width: 100%;
-    
+    font-family: 'vito extended';
 }
 
 .btn_enviar_contato{
+    
     cursor: pointer;
     margin-top: 5px;
     width: 340.831px;
@@ -516,7 +647,7 @@ footer{
     border: none;
     outline: none;
     color: white;
-    font-family: "Vito Wide";
+    font-family: 'moderniz';
     font-size: 18px;
     padding: 5px;
 
@@ -728,6 +859,9 @@ footer{
 /* responsividade */
 
 @media screen and (max-width: 775px) {
+    nav{
+        display: none;
+    }
     .servicos div {
         flex-wrap: wrap;
     }
@@ -748,6 +882,8 @@ footer{
     
     #menu_burguer {
         display: flex;
+        font-weight: 700;
+        font-size: 35px;
     }
     
     .projetos_destaque_containers {
@@ -782,10 +918,117 @@ footer{
         display: flex;
     }
 
+    .slide-track{
+        overflow: auto;
+        flex-wrap: nowrap;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    .servicos div{
+        width: 100%;
+    }
+    
+    .box_servico {
+        margin: 20px 0;
+        h2{
+            margin: 0 5%;
+        }
+        ul{
+            li{
+                margin: 0 5%;
+            }
+        }
+    }
+
+    .mvv div{
+        width: 100%;
+    }
+
+    .mvv p{
+        margin: 0 5%;
+    }
+    .contato{
+        padding: 30px 0px;
+    }
+    .contato_form{
+        width: 100%;
+        margin: 20px 5%;
+    }
+
+    #container_header{
+        display: flex;
+        justify-content: space-between; /* Alinha logo à esquerda e menu hamburguer à direita */
+        align-items: center; /* Alinha verticalmente os itens ao centro */
+        padding: 0 20px; /* Adiciona algum espaçamento horizontal */
+    }
+
+    #container_header a{
+        display: flex;
+        justify-content: center;
+    }
+
+ 
+
+    
+
+    /* header */
+    
+    
+
+
+}
+
+@media screen and (max-width:425px){
+footer{
+    justify-content: center;
+   
+}
+
+#banner_welcome h1{
+    font-size: 18px;
+}
+
+#banner_welcome h2{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 200%;
+}
+
+#banner_welcome button{
+    margin: 0;
+}
+.projetos_destaque_mobile{
+    margin: 0;
+}
+.projetos_destaque_mobile h1{
+    
+font-size: 1.6rem;
+
+
+
+}
+
+#alguns_clientes{
+    margin: 30px 0;
+}
+
+#sobre_nos div{
+    width: 90%;
+}
+
+.slider{
+    width: 90%;
+}
+
+#banner_welcome {
+    height: 600px;
 }
 
 
-
+}
 
 
 

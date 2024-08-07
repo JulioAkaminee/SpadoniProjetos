@@ -27,6 +27,29 @@
         </a>
     </div>
     <header>
+
+        <div id="overlay" class="overlay"></div>
+
+    <div id="menu" class="menu">
+        <ul>
+            <a href="#container_header" class="menu-navegacao">
+                <li>HOME</li>
+            </a>
+            <a href="#projeto_mobile" class="menu-navegacao">
+                <li >PROJETOS</li>
+            </a>
+            <a href="#servicos" >
+                <li class="menu-navegacao">SERVIÇOS</li>
+            </a>
+            <a href="#seta_contato" class="menu-navegacao">
+                <li>SOBRE</li>
+            </a>
+            <a href="#contatos_footer" class="menu-navegacao">
+                <li>CONTATO</li>
+            </a>
+        </ul>
+    </div>
+
         <div id="container_header">
             <a href="index.html"><img src="assets/images/icons/LOGO_COMPLETO.svg" alt="Logo_spadoni_projetos"></a>
 
@@ -56,7 +79,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="conteudo">
       
       <section id="banner_welcome">
         <div id="container_conteudo_banner_welcome">
@@ -125,7 +148,7 @@
         </div>
       </section>
 
-      <section class="projetos_destaque_mobile">
+      <section class="projetos_destaque_mobile" id="projeto_mobile">
         <h1>PROJETOS</h1>
         <a href="assets/pages/projetos.html">
             <button>Saiba Mais <span id="seta_contato" class="material-symbols-outlined">
@@ -318,6 +341,7 @@
         </div>
     </div>
 
+    <script src="assets/JS/interacoes.js"></script>
     <script src="assets/JS/projetos.js"></script>
 </body>
 </html>
