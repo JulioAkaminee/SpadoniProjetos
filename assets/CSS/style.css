@@ -112,7 +112,7 @@ header {
 
 #container_header {
     display: flex;
-    justify-content: space-between; /* Alinha logo à esquerda e menu hamburguer à direita */
+    justify-content: space-around; /* Alinha logo à esquerda e menu hamburguer à direita */
     align-items: center; /* Alinha verticalmente os itens ao centro */
     padding: 0 20px; /* Adiciona algum espaçamento horizontal */
 
