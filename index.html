@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -84,11 +85,11 @@
       <section id="banner_welcome">
         <div id="container_conteudo_banner_welcome">
             <div>
-                <h1>PROJETO DE ALVENARIA RACIONALIZADA E COMPATIBILIZADA, RESULTANDO EM UMA MAIOR EFICIENCIA NA OBRA.
+                <h1 class="text_banner1">PROJETO DE ALVENARIA RACIONALIZADA E COMPATIBILIZADA, RESULTANDO EM UMA MAIOR EFICIENCIA NA OBRA.
                     TRANSFORMANDO IDEIAS EM REALIDADE.</h1>
-                <h2>Descubra a excelência da Spadoni Projetos. Projetos precisos e eficientes em 2D e BIM. Transforme suas ideias em realidade hoje mesmo!</h2>
-                <a href="#contatos_footer">
-                    <button>Entre em contato <span id="seta_contato" class="material-symbols-outlined">
+                <h2 class="text_banner2">Descubra a excelência da Spadoni Projetos. Projetos precisos e eficientes em 2D e BIM. Transforme suas ideias em realidade hoje mesmo!</h2>
+                <a  class="button_banner" href="#contatos_footer">
+                    <button class="button_banner">Entre em contato <span id="seta_contato" class="material-symbols-outlined">
                         arrow_forward
                         </span> </button>
                 </a>
@@ -108,28 +109,28 @@
       <section id="projetos_destaque">
           <div id="container_projetos_destaque">
             <h1 id="titulo_projetos_destaque">PROJETOS EM DESTAQUE</h1>
-            <div class="projetos_destaque_containers">
-                <div id="sunlight" class="projeto_destaque_projetos">
+            <div id="container_projetos1" class="projetos_destaque_containers">
+                <div  id="sunlight" class="projeto_destaque_projetos">
                     <img src="assets/images/projetos/SUNLIGHT.svg" alt="">
                     <h1>SUNLIGHT</h1>
                 </div>
-                <div id="view_residence" class="projeto_destaque_projetos">
+                <div  id="view_residence" class="projeto_destaque_projetos">
                     <img src="assets/images/projetos/VIEW RESIDENCE .svg" alt="">
                     <h1>VIEW RESIDENCE</h1>
                 </div>
-                <div id="maisondor" class="projeto_destaque_projetos">
+                <div  id="maisondor" class="projeto_destaque_projetos">
                     <img src="assets/images/projetos/MAISON'DOR.svg" alt="">
                     <h1>MAISON D'OR</h1>
                 </div>
             </div>
 
-            <div class="projetos_destaque_containers">
+            <div id="container_projetos1" class="projetos_destaque_containers">
                 <div id="serra_de_botucatu" class="projeto_destaque_projetos">
                     <img src="assets/images/projetos/SERRA DE BOTUCATU .svg" alt="">
                     <h1>SERRA DE BOTUCATU</h1>
                     
                 </div>
-                <div id="icon_golf_residence" class="projeto_destaque_projetos">
+                <div  id="icon_golf_residence" class="projeto_destaque_projetos">
                     <img src="assets/images/projetos/ICON GOLF RESIDENCE .svg" alt="">
                     <h1>ICON GOLF RESIDENCE</h1>
                 </div>
@@ -162,12 +163,12 @@
           <div class="slider" id="servicos">
                 <h1>ALGUNS CLIENTES</h1>
                 <div class="slide-track">
-                    <div class="slide"> <img src="assets/images/clientes/MOURA DUBEUX.svg" alt=""></div>
-                    <div class="slide"> <img src="assets/images/clientes/PATRIMAR.svg" alt=""></div>
-                    <div class="slide"> <img src="assets/images/clientes/EZTEC.svg" alt=""></div>
-                    <div class="slide"> <img src="assets/images/clientes/ALEPAR.svg" alt=""></div>
-                    <div class="slide"> <img src="assets/images/clientes/MM CORTES.svg" alt=""></div>
-                    <div class="slide"> <img src="assets/images/" alt=""></div>
+                    <div " class="slide"> <img id="cliente1"  src="assets/images/clientes/MOURA DUBEUX.svg" alt=""></div>
+                    <div class="slide"> <img id="cliente2"   src="assets/images/clientes/PATRIMAR.svg" alt=""></div>
+                    <div class="slide"> <img id="cliente3"   src="assets/images/clientes/EZTEC.svg" alt=""></div>
+                    <div class="slide"> <img id="cliente4"   src="assets/images/clientes/ALEPAR.svg" alt=""></div>
+                    <div class="slide"> <img id="cliente5"   src="assets/images/clientes/MM CORTES.svg" alt=""></div>
+                    <div class="slide"> <img id="cliente6"   src="assets/images/" alt=""></div>
             </div>
         </div>
       </article>
@@ -176,7 +177,7 @@
               <h1>SERVIÇOS</h1>
           </div>
           <div>
-              <article class="box_servico">
+              <article id="servico_1" class="box_servico">
                 <img src="assets/images/vedacoes.svg" alt="Ícone de vedação">
                 <h2>Projeto de Produção de <b>Vedações</b></h2>
                 <ul>
@@ -187,7 +188,7 @@
                     <li>Quantitativo de blocos/drywall.</li>
                 </ul>
                       </article>
-                      <article class="box_servico">
+                      <article id="servico_2" class="box_servico">
                 <img src="assets/images/contrapiso.svg" alt="Ícone de contrapiso">
                 <h2>Projeto de <b>Contrapiso</b></h2>
                 <ul>
@@ -202,7 +203,7 @@
                     <li>Planilha de projeto de contrapiso.</li>
                 </ul>
                       </article>
-                      <article class="box_servico">
+                      <article id="servico_3" class="box_servico">
                 <img src="assets/images/kit hidraulico.svg" alt="Ícone de kit hidráulico">
                 <h2>Projeto de Produção de <b>Kit Hidráulico</b></h2>
                 <ul>
@@ -216,9 +217,11 @@
     </section>
 
     <section class="mvv">
-        <h1>MISSÃO, VISÃO E VALORES</h1>
+        <div class="text_mvv">
+            <h1>MISSÃO, VISÃO E VALORES</h1>
+        </div>
         <div>
-            <article class="box_servico">
+            <article id="servico_1" class="box_servico">
               <img src="assets/images/missao.svg" alt="Ícone de vedação">
               <h2>MISSÃO</b></h2>
               <p>Oferecer projetos de qualidade no segmento da construção civil. Respeitar as opiniões e a concorrência. Atingindo a excelência com agilidade e foco.
@@ -226,14 +229,14 @@
                 Nos dedicamos a entregar projetos detalhados, em duas ou mais dimensões, didáticos e de fácil interpretação para obra.
                 </p>
                     </article>
-                    <article class="box_servico">
+                    <article id="servico_2" class="box_servico">
               <img src="assets/images/visao.svg" alt="Ícone de contrapiso">
               <h2>VISÃO</b></h2>
              <p>Ser uma empresa de referência no ramo e qualificação no mercado.
                 Sendo uma empresa com sinônimo de compromisso e qualidade, promovendo assim a satisfação dos nossos clientes.
                 </p>
                     </article>
-                    <article class="box_servico">
+                    <article id="servico_3" class="box_servico">
               <img src="assets/images/valores.svg" alt="Ícone de kit hidráulico">
               <h2>VALORES</b></h2>
               <p>Entrega do projeto normatizado com qualidade, agilidade no processo de desenvolvimento, auxiliando no processo de compatibilização, assim promovendo uma produtividade na obra.</p>
@@ -343,5 +346,7 @@
 
     <script src="assets/JS/interacoes.js"></script>
     <script src="assets/JS/projetos.js"></script>
+  
+    <script src="assets/JS/animacoes.js"></script>
 </body>
 </html>
