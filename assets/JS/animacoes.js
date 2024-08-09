@@ -41,6 +41,10 @@ ScrollReveal().reveal('#servico_3', {
     duration: 2000, 
     once:true
 });
+ScrollReveal().reveal('#projeto_mobile', {
+    duration: 2000, 
+    once:true
+});
 
 
 

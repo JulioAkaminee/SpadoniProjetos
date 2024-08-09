@@ -586,11 +586,10 @@ footer{
         font-weight: 700;
     }
 }
-.text_mvv h1{
 
-    margin:10px 0;
+.text_mvv{
+    width: 80%;
 }
-
 /* contato */
 
 .contato{
@@ -860,10 +859,19 @@ footer{
   
 }
 
+#servico{
+    margin-top: 10px;
+}
 
 
 /* responsividade */
 
+@media screen and (min-width: 775px) {
+    .text_mvv h1{
+        width: 100%;
+        margin:10px 0;
+    }
+}
 @media screen and (max-width: 775px) {
     nav{
         display: none;
@@ -933,14 +941,18 @@ footer{
         text-align: center;
     }
 
-    .servicos div{
+    .servicos div {
         width: 100%;
     }
+    #servico {
+        width: 80%;
+    }
+   
     
     .box_servico {
         margin: 20px 0;
         h2{
-            margin: 0 5%;
+            margin: 10px 5%;
         }
         ul{
             li{
@@ -976,7 +988,7 @@ footer{
         justify-content: center;
     }
 
- 
+    
 
     
 
@@ -1041,6 +1053,6 @@ font-size: 1.6rem;
 
 /* animaçoes */
 
-.text_banner1, .text_banner2, .button_banner, .projeto_content1, .projeto_content2, .projeto_content{
+.text_banner1, .text_banner2, .button_banner, .projeto_content1, .projeto_content2, .projeto_content, #projeto_mobile{
     visibility: hidden;
 }
