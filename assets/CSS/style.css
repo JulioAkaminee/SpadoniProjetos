@@ -1,0 +1,1184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* Instalando fontes */
+@font-face {
+    font-family: "moderniz";
+    src: url(../fonts/Moderniz.otf);
+}
+@font-face {
+    font-family: "vito wide";
+    src: url(../fonts/Vito\ Wide\ Bold.ttf);
+}
+@font-face {
+    font-family: "vito extended";
+    src: url(../fonts/Vito-ExtendedRegular.woff.ttf);
+}
+html {
+    scroll-behavior: smooth;
+}
+/* botao voltar ao inicio */
+
+
+    .custom-modal {
+        display: none; 
+        position: fixed; 
+        z-index: 1000; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgba(0, 0, 0, 0.5); 
+    }
+
+    .custom-modal-content {
+        background-color: #fefefe;
+        margin: 15% auto; 
+        padding: 20px;
+        border: 1px solid #888;
+        width: 70%; 
+        max-width: 500px;
+    }
+
+    .custom-close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .custom-close:hover,
+    .custom-close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+#container_voltar_ao_inicio{
+    z-index: 99999;
+    margin-right: 5%;
+    
+    margin-bottom: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+
+    border-radius: 66.828px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12.5px);
+    -webkit-box-shadow: 0px 0px 64px 4px rgba(0, 0, 0, 0.49);
+-moz-box-shadow: 0px 0px 64px 4px rgba(0, 0, 0, 0.49);
+box-shadow: 0px 0px 64px 4px rgba(0, 0, 0, 0.49);
+
+span{
+    color: black;
+    font-weight: 700;
+    
+}
+}
+
+/* HEADER */
+/* header{
+    width: 100%;
+    
+}
+
+#menu_burguer{
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#container_header{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    img{
+     scale: 0.8;
+    }
+
+    nav{
+        display: flex;
+        
+    }
+    ul{
+       
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+       
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        align-items: center;
+        gap: 50px;
+        font-family: "vito extended" ;
+        
+        
+        li{
+            
+            font-size: clamp(12px,2vw,16px);
+            transition:  300ms;
+            cursor: pointer;
+        }
+
+        li:hover{
+            scale: 1.1;
+        }
+    }
+} */
+
+header {
+    width: 100%;
+}
+
+#container_header {
+    display: flex;
+    justify-content: space-around; /* Alinha logo à esquerda e menu hamburguer à direita */
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    padding: 0 20px; /* Adiciona algum espaçamento horizontal */
+
+    img{
+        scale: 0.8;
+       }
+}
+
+#logo img {
+    scale: 0.8;
+}
+
+#menu_container {
+    display: flex;
+    align-items: center;
+}
+
+#menu_burguer {
+    display: none;
+    font-size: 35px; /* Ajuste o tamanho conforme necessário */
+    cursor: pointer;
+}
+
+nav {
+    display: block; /* Oculta o menu para desktop como mencionado */
+
+     ul{
+       
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+       
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        align-items: center;
+        gap: 50px;
+        font-family: "vito extended" ;
+        
+        
+        li{
+            
+            font-size: clamp(12px,2vw,16px);
+            transition:  300ms;
+            cursor: pointer;
+        }
+
+        li:hover{
+            scale: 1.1;
+        }
+}}
+
+
+
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    
+    align-items: center;
+    flex-wrap: wrap;
+   
+    
+    background: #333;
+    width: 100%;
+    font-family: "vito extended" ;
+    color: white;
+    padding: 30px;
+    
+
+    ul{
+        a{
+            color: white;
+        }
+        li{
+            padding: 10px;
+            cursor: pointer;
+            transition:  300ms;
+        }
+        list-style-type: none;
+
+        li:hover{
+            
+            scale: 1.1;
+        }
+        
+    }
+}
+#footer_credits{
+    padding: 15px;
+    background: #202020;
+    
+    a{
+        text-decoration: underline;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+#contatos_footer{
+    div{
+        padding: 10px;
+        h1{
+            font-family: "vito wide";
+            font-size: 16px;
+        }
+        p{
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+    }
+}
+
+#endereco_footer{
+    p{
+        width: 339px;
+        font-family: Poppins;
+        
+    }
+}
+
+/* menu navegação mobile */
+
+.overlay {
+    display: none; /* Oculta o overlay por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Cor do fundo do overlay */
+    z-index: 999; /* Garante que o overlay fique acima de outros conteúdos */
+   
+}
+
+/* Adiciona desfoque ao fundo quando o menu está aberto */
+.blur {
+    filter: blur(1px);
+    transition: filter 500ms;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o menu */
+   text-align: center;
+   transition: 500ms;
+    padding: 20px;
+    opacity: 0;
+    
+    z-index: 1000; /* Garante que o menu fique acima do overlay */
+    width: 80%; /* Ajuste a largura do menu conforme necessário */
+    max-width: 400px; /* Define a largura máxima do menu */
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    font-size: 32px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 300ms;
+    font-family: "vito extended";
+    transition: opacity 0.5s ease-in-out; /
+}
+
+
+
+.menu a {
+    text-decoration: none;
+    color:white;
+    display: block; /* Faz com que o link ocupe toda a área do item da lista */
+}
+
+/* main */
+
+#banner_welcome{
+    background-image: url(../images/engenharia-1\ 1.svg);
+    background-size: cover; /* Faz a imagem cobrir todo o banner */
+    background-position: center; /* Centraliza a imagem no banner */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    height: 500px;
+
+ 
+    h1{
+       
+        color: #FFF;
+        font-family: "MODERNIZ";
+        font-size: clamp(23px, 2vw, 40px);
+        font-style: normal;
+        font-weight: 900;
+        line-height: 150%; /* 60px */
+        
+        
+    }
+    h2{
+        
+        
+        color: #FFF;
+        font-family: "Vito Extended";
+        font-size: clamp(16px, 2vw, 32px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 48px */
+    }
+    button{
+        margin: 5px 0;
+        display: flex;
+        align-items: center;
+        font-family: "MODERNIZ";
+        background: #BB8931;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: clamp(16px, 2vw, 20px);
+        transition: 300ms;
+        cursor: pointer;
+    }
+    button:hover{
+        background: #805C1D;
+    }
+    #seta_contato{
+        font-weight: 800;
+        scale:1.3 ;
+        padding: 0 10px;
+    }
+
+    #container_conteudo_banner_welcome{
+
+        div{
+            width: 80%;
+        }
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+
+}
+
+/* sobre nos */
+#sobre_nos{
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    
+    div{
+        width: 80%;
+        h1{
+            font-family: "Vito wide";
+            text-align: start;
+
+        }
+        p{
+            font-family: "Vito extended";
+        }
+        
+    }
+}
+
+/* projetos destaque */
+#projetos_destaque{
+    display: flex;
+    justify-content: center;
+ 
+}
+
+#container_projetos_destaque{
+    
+    display: flex;
+    width: 80%;
+  
+    flex-direction: column;
+    justify-content: center;
+    
+
+    
+    
+}
+#titulo_projetos_destaque{
+ 
+    font-family: "vito wide";
+}
+.projetos_destaque_containers{
+ 
+   display: flex;
+   
+   div{
+   
+    display: flex;
+    flex-direction: column;
+   
+    img{
+        width: 100%;
+        object-fit: cover;
+        height: 310px;
+    }
+    margin: 10px 10px 0px 0px;
+
+   }
+   h1{
+    margin: 5px 0;
+    font-family: "Vito extended";
+    font-weight: 400;
+    font-size: 16px;
+   }
+}
+
+#btn_todos_projetos{
+    font-family: "vito extended";
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: none;
+    font-weight: 400;
+    margin-top: 15px;
+    transition: 300ms;
+    border: 1.5px solid black;
+    margin: 10px 0;
+}
+
+#btn_todos_projetos:hover{
+    background: #333;
+    color: white;
+    cursor: pointer;
+    border: 1.5px solid white;
+  
+}
+
+.projeto_destaque_projetos{
+    transition: 300ms;
+    width: 80%;
+    
+}
+.projeto_destaque_projetos:hover{
+    
+    cursor: pointer;
+    
+}
+
+/* alguns clientes */
+
+#alguns_clientes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    width: 100%;
+    background: #333333;
+
+}
+#text_alguns_clientes{
+    width: 80%;
+    font-family: "vito wide";
+    color: white;
+}
+.slider{
+    width: 80%;
+   h1{
+    margin-bottom: 10px;
+    font-family: "vito wide";
+    color: white;
+   }
+}
+
+.slide-track{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.slide{
+    margin: 5px;
+
+   
+}
+
+/* servicos */
+.servicos{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 15px 0;
+   div{
+        width: 80%;
+        gap: 5%;
+
+        display: flex;
+        
+       
+    }
+    h1{
+        margin-bottom: 10px;
+        font-family: "vito wide";
+        color: #333;
+    }
+
+    h2{
+        font-family: "vito extended";
+        font-weight: 100;
+
+        b{
+            font-weight: 700;
+        }
+    }
+}
+.box_servico{
+    width: 100%;
+   
+    
+  
+    
+    img{
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        
+    }
+    
+    font-family: "vito extended";
+    
+
+    h2{
+        margin: 5px 0;
+        font-size: 22px;
+       
+    }
+    p{
+        font-weight: 200;
+    }
+    ul{
+        margin: 15px;
+    }
+
+   
+}
+
+/* Missão, visão e valores */
+
+.mvv{
+    
+    background: #333;
+
+    
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 0;
+
+    
+    
+
+    div{
+        color: white;
+        display: flex;
+        width: 80%;
+        gap: 5%;
+        
+       
+        
+    }
+    h1{
+        
+        color: white;
+        margin: 0 auto;
+        z-index: 9999;
+        margin: 30px 5%;
+        font-family: "vito wide";
+        color: white;
+    }
+    h2{
+        font-family: "vito wide";
+        font-weight: 700;
+    }
+}
+
+.text_mvv{
+    width: 80%;
+}
+/* contato */
+
+.contato{
+    display: flex;
+    justify-content: center;
+    background: #BB8931;
+    padding: 50px 0;
+    
+    label{
+        color: white;
+        font-family: "Vito Extended";
+    }
+    
+    h1{
+        color: white;
+        font-family: "Vito Wide";
+    }
+
+    span{
+        color: red;
+    }
+}
+.contato_form{
+        width: 80%;
+    
+}
+.input_email_and_name{
+    display: flex;
+    flex-direction: row;
+    
+    
+    div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.input_message{
+    display: flex;
+    flex-direction: column;
+}
+.input_contato{
+    border: none;
+    outline: none;
+    height: 39px;
+    margin: 2px;
+    padding: 11px;
+    max-width: 100%;
+    font-family: 'vito extended';
+}
+
+.btn_enviar_contato{
+    
+    cursor: pointer;
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    background: #333;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: 'moderniz';
+    font-size: 18px;
+    padding: 5px;
+
+}
+.btn_enviar_contato:active{
+    background-color: #111010;
+}
+
+/* PROJETOS */
+
+.container_projetos_geral{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+.container_projetos{
+    display: flex;
+    flex-direction: row;
+    margin: 10px ;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+
+   
+
+}
+
+.projetos{
+    align-items: center;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    transition: 300ms;
+    flex-direction: column;
+    
+
+    h1{
+        font-family: "vito extended";
+        font-weight: 400;
+        line-height: 150%; /* 36px */
+        font-size: clamp(16px,2vw,18px);
+    }
+
+  img{
+    width: 100%;
+  }
+}
+
+.text_tittle_project{
+    width: 80%;
+    display: flex;
+}
+.projetos:hover{
+    cursor: pointer;
+    
+}
+
+.text_projetos{
+    font-family: "vito wide";
+    display: flex;
+    justify-content: center;
+    
+    
+    h1{
+        margin-top:20px;
+      
+        font-size: 24px;
+    }
+}
+
+/* modal */
+/* Modal Container */
+#myModal{
+    justify-content: center;
+    align-items: center;
+}
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fixo na tela */
+   
+    z-index: 1; /* Fica acima do conteúdo */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total da tela */
+    height: 100%; /* Altura total da tela */
+    overflow: auto; /* Adiciona rolagem se necessário */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escurecido */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+  
+    padding: 20px 0;
+    border: 1px solid #888;
+    width: 500px; /* Largura do modal */
+ 
+    max-width: 900px; /* Largura máxima */
+    height: initial;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fechar (X) */
+.close {
+    margin: 0px 10px;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: end;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.text_modal{
+    display: flex;
+    flex-direction: row;
+
+    img{
+        padding: 0 15px;
+        width: 460px;
+        height: 296px;
+        object-fit: cover;
+    
+    }
+
+    div{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        h1{
+            color: #333;
+            font-family: "Vito Wide";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%; /* 54px */
+        }
+        p{
+            width: 80%;
+           
+            color: #000;
+           
+
+            font-family: "Vito Extended";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px
+        }
+       
+    }
+    
+}
+
+/* projetos destaques mobile */
+
+.projetos_destaque_mobile{
+    margin: 15px 0;
+    background-image: url(../images/projetos_mobile.svg);
+    background-size: cover; /* Faz a imagem cobrir todo o banner */
+    background-position: center; /* Centraliza a imagem no banner */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    height: 474px;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Vito Extended";
+    color: white;
+
+
+    
+    h1{
+        font-weight: 100;
+        font-size: clamp(20px,2vw,40px);
+        
+    }
+
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        margin-top: 15px;
+        width: 181px;
+        height: 57px;
+        color: white;
+        border: 1px solid white;
+        background: none;
+        font-family: "Vito Extended";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 36px */
+        transition: 300ms;
+            }
+
+            button:hover{
+                background-color: white;
+                color: black;
+            }
+
+  
+}
+
+.text_modal img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.text_modal {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.modal-content{
+    border-radius: 10px;
+
+    
+}
+
+
+
+@media screen and (min-width: 775px) {
+    .text_mvv h1{
+        width: 100%;
+        margin:10px 0;
+    }
+}
+@media screen and (max-width: 775px) {
+    nav{
+        display: none;
+    }
+    .servicos div {
+        flex-wrap: wrap;
+    }
+
+    .mvv div {
+        flex-wrap: wrap;
+    }
+
+    #container_header ul {
+        display: none;
+    }
+
+
+
+    .btn_enviar_contato {
+        width: 100%;
+    }
+    
+    #menu_burguer {
+        display: flex;
+        font-weight: 700;
+        font-size: 35px;
+    }
+    
+    .projetos_destaque_containers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .modal_content {
+        width: 36%;
+        
+    }
+    
+   
+    
+    
+    
+    #projetos_destaque {
+        display: none;
+    }
+
+    .input_email_and_name {
+        display: flex;
+        flex-direction:column;
+    }
+
+    .projetos_destaque_mobile{
+        display: flex;
+    }
+
+    .slide-track{
+        overflow: auto;
+        flex-wrap: nowrap;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    .servicos div {
+        width: 100%;
+    }
+    #servico {
+        width: 80%;
+    }
+    .servicos{
+        padding: 0;
+    }
+   
+    
+    .box_servico {
+        margin: 20px 0;
+        h2{
+            margin: 10px 5%;
+        }
+        ul{
+            li{
+                margin: 0 5%;
+            }
+        }
+    }
+
+    .mvv div{
+        width: 100%;
+    }
+
+    .mvv p{
+        margin: 0 5%;
+    }
+    .contato{
+        padding: 30px 0px;
+    }
+    .contato_form{
+        width: 100%;
+        margin: 20px 5%;
+    }
+
+    #container_header{
+        display: flex;
+        justify-content: space-between; /* Alinha logo à esquerda e menu hamburguer à direita */
+        align-items: center; /* Alinha verticalmente os itens ao centro */
+        padding: 0 20px; /* Adiciona algum espaçamento horizontal */
+    }
+
+    #container_header a{
+        display: flex;
+        justify-content: center;
+    }
+
+    
+
+    
+
+    /* header */
+    
+    
+
+
+}
+
+@media screen and (max-width:680px){
+    iframe{
+        width: 200px;
+    }
+footer{
+    justify-content: center;
+   
+}
+.projetos{
+    margin: 0;
+
+    img{
+        width: 100%;
+    }
+}
+#banner_welcome h1{
+    font-size: 20px;
+}
+.container_projetos {
+    width: 100%;
+    margin: 10px 0;
+}
+#banner_welcome h2{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 200%;
+}
+
+#banner_welcome button{
+    margin: 0;
+}
+.projetos_destaque_mobile{
+    margin: 0;
+}
+.projetos_destaque_mobile h1{
+    
+font-size: 1.6rem;
+
+
+
+}
+
+#endereco_footer {
+    p {
+        width: 100%;
+        font-family: Poppins;
+    }
+}
+
+
+#alguns_clientes{
+    margin: 31px 0;
+}
+
+#sobre_nos div{
+    width: 90%;
+}
+
+.slider{
+    width: 90%;
+}
+
+#banner_welcome {
+    height: 600px;
+}
+
+
+.text_modal div p{
+    font-size: 12px;
+}
+}
+
+@media screen and (max-width:425px){
+    .modal-content{
+        width: 90%;
+        
+    }
+    .text_modal img{
+        height: 200px;
+    }
+
+  
+}
+
+#endereco_footer, #contatos_footer{
+    margin: 30px;
+}
+
+
+
+
+
+
+/* animaçoes */
+
+.text_banner1, .text_banner2, .button_banner, .projeto_content1, .projeto_content2, .projeto_content, #projeto_mobile{
+    visibility: hidden;
+}

@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.carrossel {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    white-space: nowrap;
+    position: relative;
+}
+
+.carrossel-inner {
+    display: flex;
+    width: 100%;
+    /* Ajusta o espaço total para caber todos os itens duplicados */
+    /* Inicialmente ajusta a largura para ser suficientemente grande para acomodar todos os itens duplicados */
+    width: 60%; /* Ajuste este valor conforme necessário */
+    /* Transição suave para movimento contínuo */
+    transition: transform 0s linear;
+    display: flex;
+    transition: transform 0.5s linear;
+    will-change: transform;
+
+   
+}
+
+.carrossel-item {
+    flex: 0 0 25%; /* Cada item ocupa 25% da largura do carrossel, ajustando conforme o número total de itens */
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    flex: 0 0 auto;
+    
+    /* Remove a borda direita no último item */
+}
+
+.carrossel-item img{
+    height: 80px;
+    background: white;
+}
+.carrossel-item:last-child {
+    border-right: none;
+}
+
+
+
+
+
+@media screen and (min-width:775px){
+    .carrossel {
+       width: 80%;
+    }
+
+
+
+}
