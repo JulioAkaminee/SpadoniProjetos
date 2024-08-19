@@ -21,9 +21,3 @@
 - **Animações de Rolagem**: Usando ScrollReveal para uma apresentação dinâmica dos conteúdos à medida que o usuário rola a página.
 - **Alertas e Notificações**: Integrados com SweetAlert para uma comunicação clara e estilizada com o usuário.
 
-## Como Executar
-
-1. **Clone o Repositório**
-
-   ```sh
-   git clone https://github.com/usuario/spadoniProjetos.git
