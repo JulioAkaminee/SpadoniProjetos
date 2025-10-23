@@ -1,4 +1,4 @@
-# spadoniProjetos
+# SpadoniProjetos
 
 **spadoniProjetos** é um site desenvolvido para um casal de profissionais que atua nas áreas de engenharia e arquitetura. O projeto foi uma reformulação completa do site de um cliente, com o objetivo de criar uma presença online que reflete a competência e a estética dos profissionais envolvidos.
 
